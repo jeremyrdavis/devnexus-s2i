@@ -15,6 +15,6 @@ public class HelloResource {
     @Produces(MediaType.TEXT_PLAIN)
     public String hello() {
 
-        return "Hello, Devnexus! " + hostname.orElse("\nfrom Quarkus on an unknown server");
+        return "Hello, Devnexus!\n\n" + hostname.orElse("from Quarkus on an unknown server");
     }
 }
